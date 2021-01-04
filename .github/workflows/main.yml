@@ -13,6 +13,6 @@ jobs:
       with:
         server: ftp.0p0c.com
         username: gitftp
-        password: ${{ secrets.FTP_KEY }}
+        password: ${{secrets.FTP_KEY}}
         protocol: ftp
         log-level: verbose
