@@ -15,4 +15,3 @@ jobs:
         username: public_html_ftp@0p0c.com
         password: ${{ secrets.FTP_KEY }}
         log-level: verbose
-        server-dir: 0p0c.com/
