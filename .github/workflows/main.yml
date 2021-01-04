@@ -1,16 +1,16 @@
 on: push
-name: Publish Website
+name: Deploy website on push
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  web-deploy:
+    name: Web Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.3.2
-      with:
-        fetch-depth: 2
-    - name: FTP-Deploy-Action
+    - name: Get latest code
+      uses: actions/checkout@v2.3.2
+    
+    - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        ftp-server: ftp.0p0c.com:21
-        ftp-username: gitftp
-        ftp-password: ${{ secrets.FTP_KEY }}
+        server: ftp.0p0c.com
+        username: gitftp
+        password: ${{ secrets.FTP_KEY }}
