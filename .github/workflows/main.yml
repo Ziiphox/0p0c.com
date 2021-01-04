@@ -13,4 +13,4 @@ jobs:
       with:
         ftp-server: ftp.0p0c.com:21/repositories/0p0c.com
         ftp-username: gitftp
-        ftp-password: ${{ secrets.FTP_KEY }}
+        ftp-password: wSn@FQgG^#HI*t-n^?
