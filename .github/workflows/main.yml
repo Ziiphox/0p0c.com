@@ -11,7 +11,8 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp.0p0c.com:21
+        server: ftp.0p0c.com
         username: gitftp
         password: ${{ secrets.FTP_KEY }}
         protocol: ftps
+        log-level: verbose
