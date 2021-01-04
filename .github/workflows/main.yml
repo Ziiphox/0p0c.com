@@ -12,7 +12,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
         server: ftp.0p0c.com
-        username: gitftp@0p0c.com
+        username: public_html_ftp@0p0c.com
         password: ${{ secrets.FTP_KEY }}
         log-level: verbose
-        server-dir: /home/pccom/public_html/
+        server-dir: 0p0c.com/
